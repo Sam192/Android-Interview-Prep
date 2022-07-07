@@ -46,34 +46,36 @@
       -  There are additional components which will be used in the construction of above mentioned entities, their logic, and wiring between them. These components are-
       
           1	
-          Fragments
+          **Fragments**
 
           Represents a portion of user interface in an Activity.
 
           2	
-          Views
+          **Views**
 
           UI elements that are drawn on-screen including buttons, lists forms etc.
 
           3	
-          Layouts
+          **Layouts**
 
           View hierarchies that control screen format and appearance of the views.
 
           4	
-          Intents
+          **Intents**
 
           Messages wiring components together.
 
           5	
-          Resources
+          **Resources**
 
           External elements, such as strings, constants and drawable pictures.
 
           6	
-          Manifest
+          **Manifest**
 
           Configuration file for the application.
+          
+
       
 
 
