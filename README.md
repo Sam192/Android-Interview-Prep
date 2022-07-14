@@ -196,7 +196,7 @@
 
 #### Displaying Lists of Content
 
-* **What is the difference between `ListView` and `RecyclerView`?** - [Learn from here](https://stackoverflow.com/questions/26728651/recyclerview-vs-listview)
+* **What is the difference between `ListView` and `RecyclerView`?** - [Learn from here](https://stackoverflow.com/questions/26728651/recyclerview-vs-listview#:~:text=RecyclerView%20was%20created%20as%20a%20ListView%20improvement%2C%20so%20yes%2C%20you%20can%20create%20an%20attached%20list%20with%20ListView%20control%2C%20but%20using%20RecyclerView%20is%20easier%20as%20it%3A)
 
 * **How does RecyclerView work internally?** - [Learn from here](https://blog.mindorks.com/how-does-recyclerview-work-internally) and [here](https://www.youtube.com/watch?v=60IYWdnHsZI)
 
