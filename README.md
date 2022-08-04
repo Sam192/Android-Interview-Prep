@@ -138,7 +138,11 @@
     ![image](https://user-images.githubusercontent.com/67669163/178601186-9d821aaa-d6be-4ec1-bb59-9972a2de6a60.png)
 
 
-* **What are "launch modes"?** - [Learn from here](https://ayusch.com/android-launch-modes-explained/#:~:text=Android%20launch%20modes%20are,SingleTask)
+* **What are "launch modes"? STTI** - [Learn from here](https://ayusch.com/android-launch-modes-explained/#:~:text=Android%20launch%20modes%20are,SingleTask)
+    - Standard
+    - SingleTop
+    - SingleTask
+    - SingleInstance
 
 * **What is the difference between a `Fragment` and an `Activity`? Explain the relationship between the two.** - [Learn from here](https://stackoverflow.com/questions/10478233/why-fragments-and-when-to-use-fragments-instead-of-activities#:~:text=Activities%20are%20the,via%20the%20parent.)
 
@@ -615,11 +619,13 @@
 #### OOP
 
 * **Explain OOP Concepts.**
-    - Object-Oriented Programming is a methodology of designing a program using classes, objects, 
-    [inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)),
-    [polymorphism](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)),
-    [abstraction](https://en.wikipedia.org/wiki/Abstraction_(software_engineering)), and
-    [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)).
+    - Object-Oriented Programming is a methodology of designing a program using 
+    [classes](https://www.javatpoint.com/java-oops-concepts#:~:text=barking%2C%20eating%2C%20etc.-,Class,-Collection%20of%20objects), 
+    [objects](https://www.javatpoint.com/java-oops-concepts#:~:text=Composition-,Object,-Any%20entity%20that), 
+    [inheritance](https://www.javatpoint.com/java-oops-concepts#:~:text=consume%20any%20space.-,Inheritance,-When%20one%20object),
+    [polymorphism](https://www.javatpoint.com/java-oops-concepts#:~:text=achieve%20runtime%20polymorphism.-,Polymorphism,-If%20one%20task),
+    [abstraction](https://www.javatpoint.com/java-oops-concepts#:~:text=barks%20woof%2C%20etc.-,Abstraction,-Hiding%20internal%20details), and
+    [encapsulation](https://www.javatpoint.com/java-oops-concepts#:~:text=to%20achieve%20abstraction.-,Encapsulation,-Binding%20(or%20wrapping).
 
 * **What is the difference between a constructor and a method?**
     - The name of the constructor is same as that of the class name, whereas the name of the method can be anything.
