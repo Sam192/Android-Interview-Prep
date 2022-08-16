@@ -324,7 +324,8 @@
 
 #### Data Saving
 
-* **How to persist data in an Android app?** - [Learn from here](https://blog.mindorks.com/android-shared-preferences-in-kotlin)
+* **How to persist data in an Android app?**
+* ** SharedPreferences** - [Learn from here](https://stackoverflow.com/questions/23024831/android-shared-preferences-for-creating-one-time-activity-example#:~:text=16-,Shared%20Preferences,-are%20XML%20files)
 
 * **What is ORM? How does it work?** - [Learn from here](https://www.youtube.com/watch?v=9OHzXUo3Ymk)
 
