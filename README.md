@@ -506,23 +506,24 @@
 
 * **Describe the architecture of your last app.**
 
-* **Describe MVP.** - [Learn from here](https://mindorks.com/course/android-mvp-introduction)
+* **What is Architecture?**
+  - If you are building an application in an organized manner with some set of rules, describe proper functionalities and implement it with proper protocols, then it is called an Architecture. 
+  - NEED OF ARCHITECTURE 
+  - • Scalability & Maintainability of an application. 
+        Scalability: - can add new features over a period of time easily 
+  - Maintainability: - can do changes in existing features easily without affecting other layers 
+        E.g. Changes done in UI layer should not affect in Model layer 
+  - To achieve this - we implement architecture patterns - MVC, MVP, MVVM etc. 
 
-* **Describe MVVM.** - [Learn from here](https://blog.mindorks.com/mvvm-architecture-android-tutorial-for-beginners-step-by-step-guide) and [here](https://www.youtube.com/watch?v=HJMZNF-tG-4)
+  Architecture patterns mainly focuses on - 
+  - Separation Of Concerns  
+      Application divided into different components, each component has its own responsibility 
+  - Unit Testing 
+  
+* **Describe MVP.** - [Learn from here](https://mindorks.com/course/android-mvp-introduction)
+  - Model, view, and presenter is an android architecture that provides code reusability and testability. By following this architecture it will be easy to update code in future. To work within a team we need to follow any architecture for code readability.
 
 * **MVC vs MVP vs MVVM architecture.** - [Learn from here](https://blog.mindorks.com/mvc-mvp-mvvm-architecture-in-android)
-
-* **What is presenter?** - [Learn from here](https://mindorks.com/course/android-mvp-introduction)
-
-* **What is model?** - [Learn from here](https://mindorks.com/course/android-mvp-introduction)
-
-* **Describe MVC.** - [Learn from here](https://blog.mindorks.com/mvc-mvp-mvvm-architecture-in-android)
-
-* **Describe MVI** - [Learn from here](https://github.com/MindorksOpenSource/MVI-Architecture-Android-Beginners)
-
-* **Describe the repository pattern** - [Learn from here](https://blog.mindorks.com/android-mvp-architecture-extension-with-interactors-and-repositories-bd4b51972339)
-
-* **What is controller?** - [Learn from here](https://blog.mindorks.com/mvc-mvp-mvvm-architecture-in-android)
 
 * **Tell something about clean code** - [Learn from here](https://blog.mindorks.com/every-programmer-should-read-this-book-6755dedec78d)
 
