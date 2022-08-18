@@ -520,6 +520,61 @@
       Application divided into different components, each component has its own responsibility 
   - Unit Testing 
   
+  ![image](https://user-images.githubusercontent.com/67669163/185283118-bdeae121-6c5f-4364-b62a-660d197f8665.png)
+
+  - MVC is a simple architecture pattern, its most commonly used architecture in android (default architecture) 
+  - Model:  It contains all DB and business logic related work. Getting and manipulating the data, communicates with the controller, interacts with the database, its independent unit testing can perform easily on model 
+  - View: It contains all layout xml files 
+  - Controller: Its Activity & Fragment, it communicates with view and model, event handling done,  
+  
+  Advantages 
+    For small Apps we can use MVC 
+    It keeps business logic separate in the model. 
+    Support asynchronous techniques 
+    The modification does not affect the entire model 
+    Faster development process 
+
+  Disadvantages 
+    Not good for large Apps as View & Controller is tightly coupled, Separation of Concerns is properly followed as View is dependent on Controller, Difficult to create Test Cases for controller. 
+    Due to large code controller is unmanageable. 
+    Increased Complexity 
+    
+![image](https://user-images.githubusercontent.com/67669163/185283494-95851b10-1373-4b5c-8414-b2924205e98a.png)
+
+  - Presenter: Presenter layer can communicate with View using interfaces,  
+  - Most of the Android App uses MVP 
+  - All components are independent in MVP 
+  
+  Advantages 
+    It makes view dumb so that you can swap the view easily. 
+    Reusable of View and Presenter 
+    Code is more readable and maintainable 
+    Easy testing as business logic separated from UI 
+
+  Disadvantages 
+    Tight coupling between View and Presenter 
+    Huge amount of interfaces for interaction between layers. 
+    The code size is quite excessive. 
+    
+ ![image](https://user-images.githubusercontent.com/67669163/185283768-da55cba8-b45f-4975-b59c-0ec9c00c48df.png)
+ 
+  - Google recommends MVVM pattern to use  
+  - It is a Model-View-ViewModel. It losses the tight coupling between each component and reduces the glue classes. Works on the concept of observables. 
+  - Children don't have reference to the parent, they only have reference by observables. 
+
+  * Model- It has business logic, local and remote data source and repository. Repository: communicate with local or remote data sources according to the request from ViewModel. 
+  * View- Only user interaction i.e.XML, no business logic. Direct send user action to view model but does not directly get a response. To get a response view observes some data which ViewModel exposes. 
+  * ViewModel- Most of the user interface logic center it here. It is a bridge between a view and a business logic. It does not have any clue which view has to use it. As it does not have a direct reference to the view. Thus, good in testing and has loose coupling. But still, it needs to update the UI this interaction done by observables. When data changes observable notifies. 
+
+  Advantages 
+  No tight coupling between the view and view model 
+  No interfaces between view and model. 
+  Easy to unit testing and code is event-driven. 
+
+  Disadvantage 
+  You have to create observables for each UI component. 
+  The code size is quite excessive. 
+  
 * **Describe MVP.** - [Learn from here](https://mindorks.com/course/android-mvp-introduction)
   - Model, view, and presenter is an android architecture that provides code reusability and testability. By following this architecture it will be easy to update code in future. To work within a team we need to follow any architecture for code readability.
 
