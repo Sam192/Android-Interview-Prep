@@ -19,16 +19,23 @@
 
 * **What is android?**
   -  Android is an S/W stack for Mobile devices, that includes an Operating System, middle-ware and key applications.
+ 
+  - ![image](https://user-images.githubusercontent.com/67669163/177872071-57864e6d-5024-4187-9a00-9e9de741a4f9.png)
+
   -  By Using JNI (Java Native Interface) we can communicate with C/C++ libraries.
+  -  Android was founded by Andy Rubin in oct 2003 to develope smarter mobile devices
+  -  On Aug 2005 it was acquired by Google
   -  The latest version of Android is Android 12 (API level 31) and the initial stable release date is October 4, 2021
-![image](https://user-images.githubusercontent.com/67669163/177872071-57864e6d-5024-4187-9a00-9e9de741a4f9.png)
 
 
 * **Why android?**
   -  ![image](https://user-images.githubusercontent.com/67669163/177873250-84377899-19c2-4e2b-b1e6-dfb5792bad19.png)
-  
-  
-* ### **Tell all the Android application components.**
+  -  Open-source: It means no license, distribution and development fee.
+  -  Platform-independent: It supports Windows, Mac, and Linux platforms.
+  -  Supports various technologies: It supports camera, Bluetooth, wifi, speech, EDGE etc. technologies
+  -  Highly optimized Virtual Machine: Android uses a highly optimized virtual machine for mobile devices, called DVM (Dalvik Virtual Machine).
+
+* ### **Android application components.**
   -  ![image](https://user-images.githubusercontent.com/67669163/177873746-271e6f40-d367-4684-8cc9-e9b4db56dbc0.png)
   * **Activities**
      -  An activity represents a single screen with a user interface,in-short Activity performs actions on the screen. For example, an email application might have one activity that shows a list of new emails, another activity to compose an email, and another activity for reading emails. If an application has more than one activity, then one of them should be marked as the activity that is presented when the application is launched.
