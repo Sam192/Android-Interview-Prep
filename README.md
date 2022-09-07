@@ -21,6 +21,8 @@
   -  Android is an S/W stack for Mobile devices, that includes an Operating System, middle-ware and key applications.
  
   - ![image](https://user-images.githubusercontent.com/67669163/177872071-57864e6d-5024-4187-9a00-9e9de741a4f9.png)
+  - ![image](https://user-images.githubusercontent.com/67669163/188969832-aa9941e8-9c52-45f4-9192-52447e7dd59d.png)
+
 
   -  By Using JNI (Java Native Interface) we can communicate with C/C++ libraries.
   -  Android was founded by Andy Rubin in oct 2003 to develope smarter mobile devices
@@ -41,54 +43,57 @@
      -  An activity represents a single screen with a user interface,in-short Activity performs actions on the screen. For example, an email application might have one activity that shows a list of new emails, another activity to compose an email, and another activity for reading emails. If an application has more than one activity, then one of them should be marked as the activity that is presented when the application is launched.
      -  An activity is implemented as a subclass of Activity class as follows 
        **public class MainActivity extends Activity { }**
+     - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Activity.md) |  [Learn from Android docs](https://developer.android.com/guide/components/activities/intro-activities)
   
   * **Services**
      - A service is a component that runs in the background to perform long-running operations. For example, a service might play music in the background while the user is in a different application, or it might fetch data over the network without blocking user interaction with an activity.
      - A service is implemented as a subclass of Service class as follows 
       **public class MyService extends Service { }**
+     - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
       
   * **Broadcast Receivers**
       - Broadcast Receivers simply respond to broadcast messages from other applications or from the system. For example, applications can also initiate broadcasts to let other applications know that some data has been downloaded to the device and is available for them to use, so this is broadcast receiver who will intercept this communication and will initiate appropriate action.
       - A broadcast receiver is implemented as a subclass of BroadcastReceiver class and each message is broadcaster as an Intent object.
       - **public class MyReceiver  extends  BroadcastReceiver { 
         public void onReceive(context,intent){ }  }**
+     - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
         
   * **Content Providers**
       -  A content provider component supplies data from one application to others on request. Such requests are handled by the methods of the ContentResolver class. The data may be stored in the file system, the database or somewhere else entirely.
       -  A content provider is implemented as a subclass of ContentProvider class and must implement a standard set of APIs that enable other applications to perform transactions.
       - **public class MyContentProvider extends  ContentProvider {  public void onCreate(){ }  }**
-  * **Additional Components**
-      -  There are additional components which will be used in the construction of above mentioned entities, their logic, and wiring between them. These components are-
+      - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
       
-          1	
-          **Fragments**
+  * **Additional Components**
+      -  There are additional components which will be used in the construction of above mentioned entities, their logic, and wiring between them. These components are-	
+      - **Fragments**
 
-          Represents a portion of user interface in an Activity.
+        - Represents a portion of user interface in an Activity.
+        - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Fragment.md) | [Learn from Android docs](https://developer.android.com/guide/fragments)
 
-          2	
-          **Views**
+      - **Views**
 
-          UI elements that are drawn on-screen including buttons, lists forms etc.
+        - UI elements that are drawn on-screen including buttons, lists forms etc.
+        - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
+         
+      - **Layouts**
 
-          3	
-          **Layouts**
+        - View hierarchies that control screen format and appearance of the views.
+        - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
 
-          View hierarchies that control screen format and appearance of the views.
+      - **Intents**
 
-          4	
-          **Intents**
+        - Messages wiring components together.
+        - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
 
-          Messages wiring components together.
+      - **Resources**
 
-          5	
-          **Resources**
+        - External elements, such as strings, constants and drawable pictures.
+        - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
 
-          External elements, such as strings, constants and drawable pictures.
+      - **Manifest**
 
-          6	
-          **Manifest**
-
-          Configuration file for the application.
+        - Configuration file for the application.
           
 
 * **Tell all the Android application components.** - [Learn from here](https://developer.android.com/guide/components/fundamentals.html#Components)
@@ -102,76 +107,11 @@
 * **What is `Application` class?**
     - The Application class in Android is the base class within an Android app that contains all other components such as activities and services. The Application class, or any subclass of the Application class, is instantiated before any other class when the process for your application/package is created.
 
-#### Activity and Fragment
-
-* **What is `Activity` and its lifecycle?** -
- -  An activity represents a single screen with a user interface,in-short Activity performs actions on the screen. For example, an email application might have one activity that shows a list of new emails, another activity to compose an email, and another activity for reading emails. If an application has more than one activity, then one of them should be marked as the activity that is presented when the application is launched.
- -  An activity is implemented as a subclass of Activity class as follows 
-   **public class MainActivity extends Activity { }**<br>
-
-    ![image](https://user-images.githubusercontent.com/67669163/178596244-4595114d-5c5a-4d2f-bd9b-7a46b8443e83.png)
-
-
-* **What is the difference between onCreate() and onStart()** - <br>
-![image](https://user-images.githubusercontent.com/67669163/178597565-36252773-1148-4a03-8744-75af480154fb.png)
-
-
-* **When only onDestroy is called for an activity without onPause() and onStop()?** - [Learn from here](https://www.youtube.com/watch?v=QSxcLnZ1-RU)
-    - onPause() and onStop() will not be invoked if finish() is called from within the onCreate() method. This might occur, 
-    - for example, if you detect an error during onCreate() and call finish() as a result. In such a case, though, any cleanup you expected to be done in onPause() and onStop() will not be executed
-
-* **Why do we need to call setContentView() in onCreate() of Activity class?** - [Learn from here](https://www.youtube.com/watch?v=zeYK8JdMOi8)
-    - As onCreate() of an Activity is called only once, this is the point where most initialization should go: calling setContentView(int) to inflate the activity's UI, using findViewById to programmatically interact with widgets in the UI, calling managedQuery(android.net.Uri, String[], String, String[], String) to retrieve cursors for data being displayed, etc.
-
-    - It is inefficient to set the content in onResume() or onStart() (which are called multiple times) as the setContentView() is a heavy operation.
-
-* **What is onSavedInstanceState() and onRestoreInstanceState() in activity?**
-    - onSavedInstanceState() - This method is used to store data before pausing the activity.
-    - onRestoreInstanceState() - This method is used to recover the saved state of an activity when the activity is recreated after destruction. So, the onRestoreInstanceState() receive the bundle that contains the instance state information.
-
-* **What is `Fragment` and its lifecycle.** - [Learn from here](https://blog.mindorks.com/android-fragments-and-its-lifecycle)
-    - Represents a portion of the user interface in an Activity
-    - A Fragment is a piece of an activity which enable more modular activity design. It will not be wrong if we say, a fragment is a kind of sub-activity.
-        Following are important points about fragment −
-    - A fragment has its own layout and its own behaviour with its own life cycle callbacks.
-    - You can add or remove fragments in an activity while the activity is running.
-    - You can combine multiple fragments in a single activity to build a multi-pane UI.
-    - A fragment can be used in multiple activities.
-    - Fragment life cycle is closely related to the life cycle of its host activity which means when the activity is paused, all the fragments available in the activity will also be stopped.
-    - A fragment can implement a behaviour that has no user interface component.
-    - Fragments were added to the Android API in Honeycomb version of Android which API version 11.<br>
-    
-    ![image](https://user-images.githubusercontent.com/67669163/178601480-50fd4413-e698-4970-a3f2-ed5106e9a004.png)
-    ![image](https://user-images.githubusercontent.com/67669163/178601186-9d821aaa-d6be-4ec1-bb59-9972a2de6a60.png)
-
-
 * **What are "launch modes"? STTI** - [Learn from here](https://ayusch.com/android-launch-modes-explained/#:~:text=Android%20launch%20modes%20are,SingleTask)
     - Standard
     - SingleTop
     - SingleTask
     - SingleInstance
-
-* **What is the difference between a `Fragment` and an `Activity`? Explain the relationship between the two.** - [Learn from here](https://stackoverflow.com/questions/10478233/why-fragments-and-when-to-use-fragments-instead-of-activities#:~:text=Activities%20are%20the,via%20the%20parent.)
-
-* **When should you use a Fragment rather than an Activity?**
-    - When you have some UI components to be used across various activities
-    - When multiple view can be displayed side by side just like viewPager
-
-* **What is the difference between FragmentPagerAdapter vs FragmentStatePagerAdapter?**
-    - FragmentPagerAdapter: Each fragment visited by the user will be stored in the memory but the view will be destroyed. When the page is revisited, then the view will be created not the instance of the fragment.
-    - FragmentStatePagerAdapter: Here, the fragment instance will be destroyed when it is not visible to the user, except the saved state of the fragment.
-
-* **What is the difference between adding/replacing fragment in backstack?** - [Learn from here](https://stackoverflow.com/questions/24466302/basic-difference-between-add-and-replace-method-of-fragment/24466345#:~:text=The%20important%20difference%20is%3A)
-
-* **Why is it recommended to use only the default constructor to create a `Fragment`?** - [Learn from here](https://www.youtube.com/watch?v=9EdvcycKP9A)
-
-* **How would you communicate between two Fragments?** - [Learn from here](https://blog.mindorks.com/how-to-communicate-between-fragments#:~:text=ENROLL%20NOW-,Fragment%20Communication,-The%20communication%20between)
-
-* **What is retained `Fragment`?**
-    - By default, Fragments are destroyed and recreated along with their parent Activity’s when a configuration change occurs. Calling setRetainInstance(true) allows us to bypass this destroy-and-recreate cycle, signaling the system to retain the current instance of the fragment when the activity is recreated.
-
-* **What is the purpose of `addToBackStack()` while commiting fragment transaction?**
-    - By calling addToBackStack(), the replace transaction is saved to the back stack so the user can reverse the transaction and bring back the previous fragment by pressing the Back button. For more [Learn from here](https://stackoverflow.com/questions/22984950/what-is-the-meaning-of-addtobackstack-with-null-parameter)
 
 #### Views and ViewGroups
 
