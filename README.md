@@ -54,17 +54,17 @@
      - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
       
   * **Broadcast Receivers**
-      - Broadcast Receivers simply respond to broadcast messages from other applications or from the system. For example, applications can also initiate broadcasts to let other applications know that some data has been downloaded to the device and is available for them to use, so this is broadcast receiver who will intercept this communication and will initiate appropriate action.
+      - Broadcast Receivers simply respond to broadcast messages from other applications or from the system.These messages are sometime called events or intents. For example, applications can also initiate broadcasts to let other applications know that some data has been downloaded to the device and is available for them to use, so this is broadcast receiver who will intercept this communication and will initiate appropriate action.
       - A broadcast receiver is implemented as a subclass of BroadcastReceiver class and each message is broadcaster as an Intent object.
       - **public class MyReceiver  extends  BroadcastReceiver { 
         public void onReceive(context,intent){ }  }**
-     - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
+     - [Learn from here](https://www.tutorialspoint.com/android/android_broadcast_receivers.htm) | [LocalBroadcastManager?](https://blog.mindorks.com/using-localbroadcastmanager-in-android#:~:text=broadcast%20is%20received.-,LocalBroadcastManager,-If%20the%20communication)
         
   * **Content Providers**
       -  A content provider component supplies data from one application to others on request. Such requests are handled by the methods of the ContentResolver class. The data may be stored in the file system, the database or somewhere else entirely.
       -  A content provider is implemented as a subclass of ContentProvider class and must implement a standard set of APIs that enable other applications to perform transactions.
       - **public class MyContentProvider extends  ContentProvider {  public void onCreate(){ }  }**
-      - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
+      - [Learn from here](https://www.tutorialspoint.com/android/android_content_providers.htm) | [Learn from Android docs](https://developer.android.com/guide/topics/providers/content-provider-basics)
       
   * **Additional Components**
       -  There are additional components which will be used in the construction of above mentioned entities, their logic, and wiring between them. These components are-	
@@ -183,11 +183,6 @@
 * **What is an Explicit `Intent`?** - [Learn from here](https://blog.mindorks.com/what-are-intents-in-android)
    - Explicit Intents are used to communicate with a particular component of the same application. 
    - For example, if you want to launch an Activity by clicking some button on the present Activity then you can specify the fully-qualified address of the desired Activity to launch that Activity
-
-* **What is a `BroadcastReceiver`?** - [Learn from here](https://www.tutorialspoint.com/android/android_broadcast_receivers.htm#:~:text=Broadcast%20Receivers%20simply%20respond%20to%20broadcast%20messages%20from%20other%20applications%20or%20from%20the%20system%20itself.%20These%20messages%20are%20sometime%20called%20events%20or%20intents)
-  - Broadcast Receivers simply respond to broadcast messages from other applications or from the system itself. These messages are sometime called events or intents
-
-* **What is a `LocalBroadcastManager`?** - [Learn from here](https://blog.mindorks.com/using-localbroadcastmanager-in-android#:~:text=broadcast%20is%20received.-,LocalBroadcastManager,-If%20the%20communication)
 
 * **What is the function of an `IntentFilter`?** - [Learn from here](https://stackoverflow.com/questions/3321514/what-are-intent-filters-in-android#:~:text=100-,An%20intent%20filter%20is%20an%20expression%20in%20an%20app%27s%20manifest%20file%20that%20specifies%20the%20type%20of%20intents%20that%20the%20component%20would%20like%20to%20receive.,-When%20you%20create)
   - Implicit intent uses the intent filter to serve the user request.
