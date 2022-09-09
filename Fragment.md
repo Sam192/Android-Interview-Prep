@@ -26,10 +26,19 @@
     - FragmentStatePagerAdapter: Here, the fragment instance will be destroyed when it is not visible to the user, except the saved state of the fragment.
 
 * **What is the difference between adding/replacing fragment in backstack?** - [Learn from here](https://stackoverflow.com/questions/24466302/basic-difference-between-add-and-replace-method-of-fragment/24466345#:~:text=The%20important%20difference%20is%3A)
+    - replace removes the existing fragment and adds a new fragment..
+    - but add retains the existing fragments and adds a new fragment that means existing fragment will be active and they wont be in 'paused' state hence when a back button is pressed onCreateView() is not called for the existing fragment(the fragment which was there before new fragment was added).
 
 * **Why is it recommended to use only the default constructor to create a `Fragment`?** - [Learn from here](https://www.youtube.com/watch?v=9EdvcycKP9A)
+    - whenever the Android framework decides to recreate our fragment for example in case of orientation changes Android calls the no argument constructor of our    fragment the reason behind is that Android framework has no idea what constructor we have created.
+    
+    - the recommended way for creating the new instance of the fragment here is said arguments method is very important we must notice that we are passing the bundle inside it so when we create the instance for the first time using the new instance method the android framework can extract the bundle and store it so when in case of the orientation changes the android framework recreates the new fragment using the no argument constructor and can attach the bundle to the fragment as it has stored the bundle earlier and later again we can access that data in our on create method by using gatearguments like this so it means that when the system restores a fragment it will automatically restore our bundle and we will be able to restore the state of the fragment to the same state the fragment was initialized
 
 * **How would you communicate between two Fragments?** - [Learn from here](https://blog.mindorks.com/how-to-communicate-between-fragments#:~:text=ENROLL%20NOW-,Fragment%20Communication,-The%20communication%20between)
+    - The communication between fragments should not be done directly. There are two ways of doing so. 
+    - With the help of ViewModel
+    - With the help of Interface
+    - To have a sharing of data between Fragments, either you can use a shared ViewModel that is shared between all the Fragments or you can make an Interface and then use this interface to communicate between fragments.
 
 * **What is retained `Fragment`?**
     - By default, Fragments are destroyed and recreated along with their parent Activity’s when a configuration change occurs. Calling setRetainInstance(true) allows us to bypass this destroy-and-recreate cycle, signaling the system to retain the current instance of the fragment when the activity is recreated.
