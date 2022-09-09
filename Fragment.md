@@ -15,6 +15,7 @@
 
 
 * **What is the difference between a `Fragment` and an `Activity`? Explain the relationship between the two.** - [Learn from here](https://stackoverflow.com/questions/10478233/why-fragments-and-when-to-use-fragments-instead-of-activities#:~:text=Activities%20are%20the,via%20the%20parent.)
+    - Activities are the full screen components in the app with the toolbar, everything else are preferably Fragments.
 
 * **When should you use a Fragment rather than an Activity?**
     - When you have some UI components to be used across various activities
