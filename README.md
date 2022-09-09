@@ -47,6 +47,8 @@
   
   * **Services**
      - A service is a component that runs in the background to perform long-running operations. For example, a service might play music in the background while the user is in a different application, or it might fetch data over the network without blocking user interaction with an activity.
+     - It does not provide a user interface.Additionally, a component can bind to a service to interact with it and even perform interprocess communication (IPC). 
+     - For example, a service can handle network transactions, play music, perform file I/O, or interact with a content provider, all from the background.
      - A service is implemented as a subclass of Service class as follows 
       **public class MyService extends Service { }**
      - [Learn from here](https://github.com/Sam192/Android-Interview-Prep/blob/main/Service.md) | [Learn from Android docs](https://developer.android.com/guide/components/services)
