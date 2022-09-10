@@ -17,7 +17,8 @@
   - Implicit intent uses the intent filter to serve the user request.
   - The intent filter specifies the types of intents that an activity, service, or broadcast receiver can respond.
   - Intent filters are declared in the Android manifest file.
-  - Intent filter must contain <action>
+  - For instance, by declaring an intent filter for an activity, you make it possible for other apps to directly start your activity with a certain kind of intent.
+  - Intent filter must contain < action >
 
 * **What is a Sticky `Intent`?**
     - Sticky Intents allows communication between a function and a service. sendStickyBroadcast() performs a sendBroadcast(Intent) known as sticky, i.e. the Intent you are sending stays around after the broadcast is complete, so that others can quickly retrieve that data through the return value of registerReceiver(BroadcastReceiver, IntentFilter). For example, if you take an intent for ACTION_BATTERY_CHANGED to get battery change events: When you call registerReceiver() for that action — even with a null BroadcastReceiver — you get the Intent that was last Broadcast for that action. Hence, you can use this to find the state of the battery without necessarily registering for all future state changes in the battery.
