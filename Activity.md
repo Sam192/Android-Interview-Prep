@@ -18,3 +18,7 @@
 * **What is onSavedInstanceState() and onRestoreInstanceState() in activity?**
     - onSavedInstanceState() - This method is used to store data before pausing the activity.
     - onRestoreInstanceState() - This method is used to recover the saved state of an activity when the activity is recreated after destruction. So, the onRestoreInstanceState() receive the bundle that contains the instance state information.
+
+* **onNewIntent?**
+    - onNewIntent() is meant as entry point for singleTop/Task activities which already run somewhere else in the stack and therefore can't call onCreate(). 
+    - From activities lifecycle point of view it's therefore needed to call onPause() before onNewIntent()
