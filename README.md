@@ -62,6 +62,8 @@
         
   * **Content Providers**
       -  A content provider component supplies data from one application to others on request. Such requests are handled by the methods of the ContentResolver class. The data may be stored in the file system, the database or somewhere else entirely.
+      -  sometimes it is required to share data across applications. This is where content providers become very useful.
+      -  A content provider behaves very much like a database where you can query it, edit its content, as well as add or delete content using insert(), update(), delete(), and query() methods. In most cases this data is stored in an SQlite database.
       -  A content provider is implemented as a subclass of ContentProvider class and must implement a standard set of APIs that enable other applications to perform transactions.
       - **public class MyContentProvider extends  ContentProvider {  public void onCreate(){ }  }**
       - [Learn from here](https://www.tutorialspoint.com/android/android_content_providers.htm) | [Learn from Android docs](https://developer.android.com/guide/topics/providers/content-provider-basics)
