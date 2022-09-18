@@ -248,8 +248,18 @@
 
 #### Data Saving
 
-* **How to persist data in an Android app?**
-* ** SharedPreferences** - [Learn from here](https://stackoverflow.com/questions/23024831/android-shared-preferences-for-creating-one-time-activity-example#:~:text=16-,Shared%20Preferences,-are%20XML%20files)
+* **SharedPreferences?** - [Learn from here](https://stackoverflow.com/questions/23024831/android-shared-preferences-for-creating-one-time-activity-example#:~:text=16-,Shared%20Preferences,-are%20XML%20files)
+    - Shared Preferences are XML files to store private primitive data in key-value pairs. Data Types include Booleans, floats, ints, longs, and strings.
+    - When we want to save some data which is accessible throughout the application, one way to do is to save it in global variable. But it will vanish once the application is closed. Another and recommended way is to save in SharedPreference. Data saved in SharedPreferences file is accessible throughout the application and persists even after the application closes or across reboots.
+    - SharedPreferences saves the data in key-value pair and can be accessed in same fashion.
+    - You can create Object of SharedPreferences using two methods,
+    1) .getSharedPreferences() : Using this methods you can create Multiple SharedPreferences.and its first parameters in name of SharedPreferences.
+    2) .getPreferences() : Using this method you can create Single SharedPreferences.
+
+
+* **What is commit() and apply() in SharedPreferences?**
+    - commit() returns a boolean value of success or failure immediately by writing data synchronously.
+    - apply() is asynchronous and it won't return any boolean response. If you have an apply() outstanding and you are performing commit(), then the commit() will be blocked until the apply() is not completed.
 
 * **What is ORM? How does it work?** - [Learn from here](https://www.youtube.com/watch?v=9OHzXUo3Ymk)
 
@@ -261,9 +271,6 @@
 
 * **How to encrypt data in Android?** - [Learn from here](https://blog.mindorks.com/how-to-encrypt-data-safely-on-device-and-use-the-androidkeystore)
 
-* **What is commit() and apply() in SharedPreferences?**
-    - commit() returns a boolean value of success or failure immediately by writing data synchronously.
-    - apply() is asynchronous and it won't return any boolean response. If you have an apply() outstanding and you are performing commit(), then the commit() will be blocked until the apply() is not completed.
 
 #### Look and Feel
 
