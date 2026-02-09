@@ -1,3 +1,4 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a72e7391-25fb-4489-83ea-31cc53f82958" />
 
 ## A complete guide for learning Android Development - [Check here](https://mindorks.com/android-app-development-online-course)
 
